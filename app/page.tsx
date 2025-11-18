@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   FaFacebookF,
-  FaInstagram,
   FaLinkedin,
   FaWhatsapp,
   FaArrowRight,
@@ -13,14 +12,12 @@ import {
 import SkillsSection from "../components/skills";
 import ProjectsSection from "../components/project";
 import FormSection from "../components/form";
-
-
+import Footer from "../components/footer";
 
 const HomePage = () => {
   return (
     <>
       <div className="relative min-h-screen overflow-hidden font-lato">
-      
         <video
           autoPlay
           loop
@@ -31,23 +28,38 @@ const HomePage = () => {
           <source src="/bgvideo.mp4" type="video/mp4" />
         </video>
 
-       
         <div className="fixed top-0 left-0 w-full h-full bg-black/40 z-0"></div>
 
         <div className="relative z-10">
-         
           <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start min-h-screen w-full px-4 md:px-8 text-center md:text-left">
             <div className="flex flex-col justify-center md:justify-start items-center md:items-start mt-24 md:mt-48 md:ml-14 space-y-7 w-full md:w-auto">
-              <p className="text-2xl text-[#959595]">Hi I am</p>
-              <h4 className="text-xl text-[#959595] font-semibold">
-                Sandra Sibanda
+              <p className="text-2xl text-[#959595]">Hello!</p>
+              <h4 className="text-5xl text-[#959595] font-semibold">
+                l'm Sandra Sibanda
               </h4>
-              <h1 className="text-3xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-[#38014F] via-[#70117C] to-[#70117C] bg-clip-text text-transparent">
+              <h1 className="text-3xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-[#38014F] via-[#70117C] to-[#70117C] bg-clip-text text-transparent">
                 Software Developer
               </h1>
+              <p className="text-xl  text-[#959595]">
+                I'm a growing software developer dedicated to learning, 
+                building, <br /> and solving real-world problems through code. Every <br />
+                project I create brings me closer to mastering my craft.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-7 w-full md:w-auto">
+                
+                <a
+                  href="https://www.canva.com/design/DAGrcFwwpnw/HYXGIL8G0ior5oly8KgRtw/edit?utm_content=DAGrcFwwpnw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
+                >
+                  <button className=  " bg-gradient-to-r from-[#3a0060] to-[#6C169D] text-white  px-7 py-2 rounded border-[#959595] hover:bg-[#959595] hover:text-white transition w-full sm:w-auto">
+                    Download CV
+                  </button>
+                </a>
+              </div>
 
-           
-              <div className="flex justify-center md:justify-start flex-row space-x-4 mt-2">
+              <div className="flex justify-center md:justify-start flex-row space-x-3 ">
                 <a
                   href="https://www.facebook.com/sandra.sibanda.31105"
                   target="_blank"
@@ -56,14 +68,7 @@ const HomePage = () => {
                 >
                   <FaFacebookF />
                 </a>
-                <a
-                  href="https://www.instagram.com/ropafadzo.talent?igsh=MWxseTl2b3YwcTJhdA=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-pink-500 border border-white rounded-full p-3 transition-colors duration-200"
-                >
-                  <FaInstagram />
-                </a>
+                
                 <a
                   href="https://www.linkedin.com/in/sandra-sibanda-491521352"
                   target="_blank"
@@ -82,49 +87,9 @@ const HomePage = () => {
                 </a>
               </div>
 
-             
-              <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-7 w-full md:w-auto">
-                <Link href="#contact">
-                  <button className="bg-gradient-to-r from-[#3a0060] to-[#6C169D] text-white px-4 py-2 rounded font-bold hover:opacity-90 transition">
-                    Hire Me
-                  </button>
-                </Link>
-                <a
-                  href="https://www.canva.com/design/DAGrcFwwpnw/HYXGIL8G0ior5oly8KgRtw/edit?utm_content=DAGrcFwwpnw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto"
-                >
-                  <button className="text-[#959595] border-2 px-7 py-2 rounded border-[#959595] hover:bg-[#959595] hover:text-white transition w-full sm:w-auto">
-                    Download CV
-                  </button>
-                </a>
-              </div>
+              
 
-              <div className="w-full flex flex-col md:flex-row justify-center md:justify-start mt-6 z-20 relative mb-6">
-                <div className="bg-[#FFFFFF0A] rounded-2xl shadow-lg flex flex-col md:flex-row px-5 py-2 space-y-6 md:space-y-0 md:space-x-10 backdrop-blur-md items-center w-full max-w-xl">
-                  <div className="flex flex-col items-center">
-                    <span className="text-2xl font-bold text-[#70117C]">2+</span>
-                    <span className="text-lg text-[#DFDFDF] mt-2">
-                      Years Experience
-                    </span>
-                  </div>
-                  <div className="hidden md:block h-14 w-px bg-[#959595] opacity-40 mx-8" />
-                  <div className="flex flex-col items-center">
-                    <span className="text-2xl font-bold text-[#70117C]">20+</span>
-                    <span className="text-lg text-[#DFDFDF] mt-2">
-                      Projects Done
-                    </span>
-                  </div>
-                  <div className="hidden md:block h-14 w-px bg-[#959595] opacity-40 mx-8" />
-                  <div className="flex flex-col items-center">
-                    <span className="text-2xl font-bold text-[#70117C]">15+</span>
-                    <span className="text-lg text-[#DFDFDF] mt-2">
-                      Happy Clients
-                    </span>
-                  </div>
-                </div>
-              </div>
+              
             </div>
 
             <div className="relative flex items-center justify-center md:ml-20 mt-10 md:mt-48 w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[450px] md:h-[450px]">
@@ -178,21 +143,22 @@ const HomePage = () => {
               <div className="relative md:top-[-270px] flex w-full justify-center md:justify-start">
                 <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed max-w-md sm:max-w-lg md:max-w-none">
                   I am a passionate full-stack developer with a strong focus on
-                  building clean, user-friendly, and efficient digital solutions. I
-                  enjoy turning ideas into real products, whether it is designing
-                  intuitive interfaces or developing robust backend systems. With
-                  skills in modern web technologies, I am always eager to learn,
-                  adapt, and take on new challenges that help me grow as a
-                  developer. My goal is to create software that not only works
-                  seamlessly but also makes a meaningful impact for users.
+                  building clean, user-friendly, and efficient digital
+                  solutions. I enjoy turning ideas into real products, whether
+                  it is designing intuitive interfaces or developing robust
+                  backend systems. With skills in modern web technologies, I am
+                  always eager to learn, adapt, and take on new challenges that
+                  help me grow as a developer. My goal is to create software
+                  that not only works seamlessly but also makes a meaningful
+                  impact for users.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mt-8 md:relative md:bottom-[280px]">
                 <Link href="#contact">
-                <button className="bg-gradient-to-r from-[#3a0060] to-[#6C169D] text-white px-5 py-2 rounded font-bold hover:opacity-90 transition w-full sm:w-auto">
-                  Contact Me
-                </button>
+                  <button className="bg-gradient-to-r from-[#3a0060] to-[#6C169D] text-white px-5 py-2 rounded font-bold hover:opacity-90 transition w-full sm:w-auto">
+                    Contact Me
+                  </button>
                 </Link>
               </div>
             </div>
@@ -210,9 +176,7 @@ const HomePage = () => {
             <FormSection />
           </div>
 
-         
-
-     
+          <Footer/>
         </div>
       </div>
     </>
