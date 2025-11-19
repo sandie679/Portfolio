@@ -33,14 +33,14 @@ const HomePage = () => {
         <div className="relative z-10">
           <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start min-h-screen w-full px-4 md:px-8 text-center md:text-left">
             <div className="flex flex-col justify-center md:justify-start items-center md:items-start mt-24 md:mt-48 md:ml-14 space-y-7 w-full md:w-auto">
-              <p className="text-2xl text-[#959595]">Hello!</p>
-              <h4 className="text-5xl text-[#959595] font-semibold">
+              <p className="text-2xl text-white">Hello!</p>
+              <h4 className="text-5xl text-white font-semibold">
                 l'm Sandra Sibanda
               </h4>
               <h1 className="text-3xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-[#38014F] via-[#70117C] to-[#70117C] bg-clip-text text-transparent">
                 Software Developer
               </h1>
-              <p className="text-xl  text-[#959595]">
+              <p className="text-xl  text-white">
                 I'm a growing software developer dedicated to learning, 
                 building, <br /> and solving real-world problems through code. Every <br />
                 project I create brings me closer to mastering my craft.

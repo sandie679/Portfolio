@@ -1,7 +1,8 @@
 "use client";
 
+
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -30,12 +31,12 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Social</h3>
-          <div className="flex items-center space-x-5 text-xl">
-            <a href="https://github.com" className="hover:text-white"><FaGithub /></a>
-            <a href="https://linkedin.com" className="hover:text-white"><FaLinkedin /></a>
-            <a href="https://twitter.com" className="hover:text-white"><FaTwitter /></a>
-            <a href="https://wa.me/" className="hover:text-white"><FaWhatsapp /></a>
+          <h3 className="text-lg font-semibold text-white  mb-3">Social</h3>
+          <div className="flex items-center space-x-5  text-xl">
+            <a href="https://github.com/sandie679" className="hover:text-white  p-3 rounded-full border border-grey "><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/sandra-sibanda-491521352" className="hover:text-white p-3 rounded-full border border-grey"><FaLinkedin /></a>
+            <a href="https://www.facebook.com/sandra.sibanda.31105" className="hover:text-white p-3 rounded-full border border-grey"><FaFacebookF /></a>
+            <a href="https://wa.me/263778122053" className="hover:text-white p-3 rounded-full border border-grey"><FaWhatsapp /></a>
           </div>
         </div>
 
